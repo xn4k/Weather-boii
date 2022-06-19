@@ -22,7 +22,7 @@ async function makeRequest() {
 
   const config = {
     method: 'get',
-    url: 'https://api.weatherapi.com/v1/current.json?key=ffc4143944e6422ab0602017221806&q=Cologne'
+    url: 'x'
   }
 
   let res = await axios(config)
