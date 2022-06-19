@@ -22,7 +22,8 @@ async function makeRequest() {
 
   const config = {
     method: 'get',
-    url: 'x'
+    url: process.env.API_CALL
+    //process.env.API_CALL
   }
 
   let res = await axios(config)
