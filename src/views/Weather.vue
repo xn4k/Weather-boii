@@ -28,7 +28,9 @@ export default {
   mounted() {
     axios
         .get('https://api.weatherapi.com/v1/current.json?key=ffc4143944e6422ab0602017221806&q=Cologne')
-        .then(response => (this.info = response));
+        .then(response => (this.info = response))
+        .catch(error => console.log(error))
+        console.log(this.info);
   }
 }
 
