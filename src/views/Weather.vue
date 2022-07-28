@@ -23,6 +23,7 @@ export default {
       info: null
     };
   },
+  //test
   methods: {
     loadWeather() {
       axios
