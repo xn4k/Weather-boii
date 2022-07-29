@@ -9,6 +9,12 @@
     <div id="app">
       {{ info }}
     </div>
+    <div id="">
+      <p>asdas</p>
+      <div>
+        {{ info }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,7 +45,7 @@ export default {
 
 /*
 new Vue({
-  
+
 });
 */
 
