@@ -4,7 +4,7 @@
     <h1>hallloooooiiiiiiiii</h1>
     <p>Lets try to make an API call</p>
     <p>You can choose your city first:</p>
-    <button @click="loadWeather" class="apibutton">TESTBUTTON 4 the API</button>
+    <button @click="getWeather" class="apibutton">TESTBUTTON 4 the API</button>
 
     <div id="app">
       {{ info }}
@@ -24,14 +24,24 @@ export default {
     };
   },
   methods: {
-    loadWeather() {
+    getWeather() {
+      const api_key = process.env.VUE_APP_API_KEY
       axios
-          .get('https://api.weatherapi.com/v1/current.json?key=ffc4143944e6422ab0602017221806&q=Cologne')
+          .get('https://api.weatherapi.com/v1/current.json?key=' + api_key + '&q=Cologne')
           .then(response => (this.info = response))
           .catch(error => console.log(error))
-      console.log(this.info);
+      //console.log(process.env.VUE_APP_API_KEY)
+    },
+    xyinja1() {
+      const api_key = process.env.VUE_APP_API_KEY
+      axios
+          .get('https://api.weatherapi.com/v1/current.json?key=' + api_key + '&q=Cologne')
+          .then(response => (this.info = response))
+          .catch(error => console.log(error))
+      //console.log(process.env.VUE_APP_API_KEY)
+
     }
-  },
+  }
 }
 
 
