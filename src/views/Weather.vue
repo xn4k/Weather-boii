@@ -9,6 +9,12 @@
     <div id="app">
       {{ info }}
     </div>
+    <div id="">
+      <p>asdas</p>
+      <div>
+        {{ info }}
+      </div>
+    </div>
   </div>
 </template>
 
@@ -23,6 +29,7 @@ export default {
       info: null
     };
   },
+  //test
   methods: {
     getWeather() {
       const api_key = process.env.VUE_APP_API_KEY
@@ -48,7 +55,7 @@ export default {
 
 /*
 new Vue({
-  
+
 });
 */
 
