@@ -1,4 +1,4 @@
-# quoteapp
+# teapp
 
 ## Project setup
 ```
